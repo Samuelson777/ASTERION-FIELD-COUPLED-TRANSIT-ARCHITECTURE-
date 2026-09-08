@@ -90,7 +90,7 @@ interaction.
 The classical rocket equation relates achievable velocity change to effective
 exhaust velocity and propellant mass ratio:
 
-$$\Delta v = v_e \ln\left(\frac{m_0}{m_f}\right)\tag{1}$$
+$\Delta v = v_e \ln\left(\frac{m_0}{m_f}\right)\tag{1}$
 
 where:
 
