@@ -90,10 +90,8 @@ interaction.
 The classical rocket equation relates achievable velocity change to effective
 exhaust velocity and propellant mass ratio:
 
-$$
-\Delta v = v_e \ln\left(\frac{m_0}{m_f}\right)
-\tag{1}
-$$
+$$\Delta v = v_e \ln\left(\frac{m_0}{m_f}\right)
+\tag{1}$$
 
 where:
 
@@ -108,13 +106,11 @@ where:
 The idealized Stefan–Boltzmann radiation relationship estimates the radiator
 area required to reject a given thermal load:
 
-$$
-A_{\mathrm{rad}} =
+$$A_{\mathrm{rad}} =
 \frac{Q}
 {\varepsilon \sigma
 \left(T_{\mathrm{rad}}^4-T_{\mathrm{space}}^4\right)}
-\tag{2}
-$$
+\tag{2}$$
 
 where:
 
@@ -130,10 +126,8 @@ where:
 The idealized radiation-pressure relationship estimates thrust produced by an
 incident photon beam:
 
-$$
-F_{\mathrm{ph}} = \frac{C_R P}{c}
-\tag{3}
-$$
+$$F_{\mathrm{ph}} = \frac{C_R P}{c}
+\tag{3}$$
 
 where:
 
@@ -150,19 +144,15 @@ reflecting interaction can approach 2 under the appropriate assumptions.
 The relativistic kinetic energy of a particle impacting a spacecraft at high
 relative velocity is:
 
-$$
-E_{\mathrm{imp}} = (\gamma-1)mc^2
-\tag{4}
-$$
+$$E_{\mathrm{imp}} = (\gamma-1)mc^2
+\tag{4}$$
 
 where the Lorentz factor is:
 
-$$
-\gamma =
+$$\gamma =
 \frac{1}
 {\sqrt{1-\frac{v^2}{c^2}}}
-\tag{5}
-$$
+\tag{5}$$
 
 where:
 
@@ -177,12 +167,10 @@ where:
 The characteristic gyroradius of a relativistic charged particle in a magnetic
 field is:
 
-$$
-r_L =
+$$r_L =
 \frac{\gamma m v_\perp}
 {|q|B}
-\tag{6}
-$$
+\tag{6}$$
 
 where:
 
