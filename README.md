@@ -81,43 +81,121 @@ Deployable radiator petals reject waste heat produced by power conversion, elect
 
 ## Key Equations
 
-The research uses the following governing relationships.
+The research uses the following governing relationships to evaluate spacecraft
+propulsion, thermal management, high-speed impact protection, and magnetic
+interaction.
 
-### Rocket equation
+### 1. Tsiolkovsky Rocket Equation
 
-\[
+The classical rocket equation relates achievable velocity change to effective
+exhaust velocity and propellant mass ratio:
+
+$$
 \Delta v = v_e \ln\left(\frac{m_0}{m_f}\right)
-\]
+\tag{1}
+$$
 
-### Ideal radiator area
+where:
 
-\[
+- $\Delta v$ = achievable change in velocity
+- $v_e$ = effective exhaust velocity
+- $m_0$ = initial spacecraft mass
+- $m_f$ = final spacecraft mass after propellant expenditure
+- $\ln$ = natural logarithm
+
+### 2. Ideal Radiator Area
+
+The idealized Stefan–Boltzmann radiation relationship estimates the radiator
+area required to reject a given thermal load:
+
+$$
 A_{\mathrm{rad}} =
 \frac{Q}
-{\varepsilon \sigma \left(T_{\mathrm{rad}}^4-T_{\mathrm{space}}^4\right)}
-\]
+{\varepsilon \sigma
+\left(T_{\mathrm{rad}}^4-T_{\mathrm{space}}^4\right)}
+\tag{2}
+$$
 
-### Photon-beam thrust
+where:
 
-\[
+- $A_{\mathrm{rad}}$ = required radiator area
+- $Q$ = waste-heat load
+- $\varepsilon$ = radiator emissivity
+- $\sigma$ = Stefan–Boltzmann constant
+- $T_{\mathrm{rad}}$ = radiator temperature
+- $T_{\mathrm{space}}$ = effective radiative background temperature
+
+### 3. Photon-Beam Thrust
+
+The idealized radiation-pressure relationship estimates thrust produced by an
+incident photon beam:
+
+$$
 F_{\mathrm{ph}} = \frac{C_R P}{c}
-\]
+\tag{3}
+$$
 
-### Relativistic impact energy
+where:
 
-\[
-E_{\mathrm{imp}} = (\gamma-1)mc^2,
-\qquad
-\gamma = \frac{1}{\sqrt{1-v^2/c^2}}
-\]
+- $F_{\mathrm{ph}}$ = photon-beam thrust
+- $C_R$ = effective momentum-transfer coefficient
+- $P$ = incident beam power
+- $c$ = speed of light in vacuum
 
-### Charged-particle gyroradius
+For an ideal absorbing surface, $C_R$ is approximately 1, while an ideal
+reflecting interaction can approach 2 under the appropriate assumptions.
 
-\[
-r_L = \frac{\gamma m v_\perp}{|q|B}
-\]
+### 4. Relativistic Impact Energy
 
-These equations define important constraints involving propellant dependence, beam-generated thrust, radiator sizing, high-speed particle impacts, and magnetic-field interaction.
+The relativistic kinetic energy of a particle impacting a spacecraft at high
+relative velocity is:
+
+$$
+E_{\mathrm{imp}} = (\gamma-1)mc^2
+\tag{4}
+$$
+
+where the Lorentz factor is:
+
+$$
+\gamma =
+\frac{1}
+{\sqrt{1-\frac{v^2}{c^2}}}
+\tag{5}
+$$
+
+where:
+
+- $E_{\mathrm{imp}}$ = relativistic kinetic impact energy
+- $\gamma$ = Lorentz factor
+- $m$ = particle rest mass
+- $v$ = particle–spacecraft relative velocity
+- $c$ = speed of light in vacuum
+
+### 5. Relativistic Charged-Particle Gyroradius
+
+The characteristic gyroradius of a relativistic charged particle in a magnetic
+field is:
+
+$$
+r_L =
+\frac{\gamma m v_\perp}
+{|q|B}
+\tag{6}
+$$
+
+where:
+
+- $r_L$ = relativistic Larmor radius (gyroradius)
+- $\gamma$ = Lorentz factor
+- $m$ = particle rest mass
+- $v_\perp$ = particle velocity component perpendicular to the magnetic field
+- $q$ = particle electric charge
+- $B$ = magnetic-field magnitude
+
+Together, these equations establish important first-order constraints on
+propellant dependence, beam-generated thrust, thermal rejection, high-speed
+particle impacts, and magnetic interaction within the Asterion architecture.
 
 ---
 
